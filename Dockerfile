@@ -58,7 +58,7 @@ RUN wget --no-check-certificate https://get.helm.sh/helm-v${HELM_VERSION}-linux-
 # Install AWS CLI
 RUN apk add --no-cache aws-cli 
 
-# Install necessary packages
+# Install Azeure-cli
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install --no-cache-dir --upgrade pip \
